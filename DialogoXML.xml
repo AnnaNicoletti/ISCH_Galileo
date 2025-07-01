@@ -1,14 +1,54 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiheader>
+    <teiHeader xml:lang="eng">
         <fileDesc>
             <titleStmt>
-                <title>Dialogo sopra i due massimi sistemi</title>
+                <title>Dialogo sopra i due massimi sistemi del mondo: a digital edition</title>
                 <author>
                     <persName>
                         <forename>Galileo</forename>
                         <surname>Galilei</surname>
                     </persName>
+                    <idno type="VIAF">http://viaf.org/viaf/2470550</idno>
                 </author>
+                <respStmt>
+                    <resp>Compiled by</resp>
+                    <name>Anna Nicoletti</name>
+                    <name>Nadia Calvisi</name>
+                </respStmt>
             </titleStmt>
+
             <editionStmt>
+                <edition>Student's edition, <date>July 2025</date>
+                </edition>
+            </editionStmt>
+
+            <publicationStmt>
+                <publisher>University of Bologna</publisher>
+                <pubPlace>Bologna</pubPlace>
+                <date when="2025">2025</date>
+                <availability status="open access">
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <bibl xml:id="Sosio_DialogoMassimiSistemi">
+                    <title>Dialogo sopra i due massimi sistemi del mondo</title>
+                    <editor><name>Libero Sosio</name></editor>
+                    <pubPlace>Torino</pubPlace>
+                    <publisher>Einaudi</publisher>
+                    <date when="1970">1970</date>
+                </bibl>
+                <listPerson>
+                    <person xml:id="salviati" role="interlocutor">Salviati</person>
+                    <person xml:id="sagredo" role="interlocutor">Sagredo</person>
+                    <person xml:id="simplicio" role="interlocutor">Simplicio</person>
+                </listPerson>
+            </sourceDesc>         
+        </fileDesc>
+    </teiHeader>
+
+    <text xml:lang="ita">
+
+    </text>
                 
