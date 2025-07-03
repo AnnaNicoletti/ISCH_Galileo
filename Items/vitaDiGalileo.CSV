@@ -1,0 +1,17 @@
+subject;predicate;object
+https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo;rdf:type;schema:Book
+https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo;schema:author;<http://viaf.org/viaf/2467372>
+https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo;schema:author;<http://viaf.org/viaf/90636464>
+https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo;schema:inLanguage;"""it"""
+https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo;schema:datePublished;"""2015"""
+https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo;schema:genre;"""Drama"""
+https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo;schema:genre;"""Epic Theatre"""
+https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo;schema:identifier;"""OCLC:1277290792"""
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;

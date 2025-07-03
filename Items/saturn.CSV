@@ -1,0 +1,21 @@
+subject;predicate;object
+https://galileoarchive.org/ISCHGalileo/item/painting/Saturn;rdf:type;schema:VisualArtwork
+https://galileoarchive.org/ISCHGalileo/item/painting/Saturn;schema:name;"""Saturno devorando a un hijo"""
+https://galileoarchive.org/ISCHGalileo/item/painting/Saturn;schema:alternateName;"""Saturn"""
+https://galileoarchive.org/ISCHGalileo/item/painting/Saturn;schema:creator;<http://viaf.org/viaf/56647196>
+https://galileoarchive.org/ISCHGalileo/item/painting/Saturn;schema:artform;<https://www.wikidata.org/wiki/Q296955>
+https://galileoarchive.org/ISCHGalileo/item/painting/Saturn;schema:artworkSurface;<https://www.wikidata.org/wiki/Q4259259>
+https://galileoarchive.org/ISCHGalileo/item/painting/Saturn;schema:dateCreated;"""1636"""
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;

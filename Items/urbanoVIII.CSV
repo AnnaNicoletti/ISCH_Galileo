@@ -1,0 +1,17 @@
+subject;predicate;object
+https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII;rdf:type;schema:Person
+https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII;schema:name;"""Urbano VIII"""
+https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII;schema:nationality;"""Italian"""
+https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII;schema:birthDate;"""1568-04"""
+https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII;schema:deathDate;"""1644-07-29"""
+https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII;schema:hasRole;<http://viaf.org/viaf/137124612>
+https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII;schema:sameAs;<http://viaf.org/viaf/96062867>
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;

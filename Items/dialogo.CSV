@@ -1,0 +1,12 @@
+subject;predicate;object
+https://galileoarchive.org/ISCHGalileo/item/book/Dialogo;rdf:type;schema:Book
+https://galileoarchive.org/ISCHGalileo/item/book/Dialogo;schema:author;<http://viaf.org/viaf/2470550>
+https://galileoarchive.org/ISCHGalileo/item/book/Dialogo;schema:genre;"""Popular Science"""
+https://galileoarchive.org/ISCHGalileo/item/book/Dialogo;schema:genre;"""Astronomy"""
+https://galileoarchive.org/ISCHGalileo/item/book/Dialogo;schema:inLanguage;"""it"""
+https://galileoarchive.org/ISCHGalileo/item/book/Dialogo;schema:datePublished;"""1632"""
+https://galileoarchive.org/ISCHGalileo/item/book/Dialogo;schema:identifier;"""OCLC:1128337506"""
+;;
+;;
+;;
+;;

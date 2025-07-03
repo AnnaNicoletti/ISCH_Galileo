@@ -1,0 +1,6 @@
+subject;predicate;object
+https://galileoarchive.org/ISCHGalileo/item/event/GiornateGalileiane;rdf:type;schema:Event
+https://galileoarchive.org/ISCHGalileo/item/event/GiornateGalileiane;schema:name;"""Giornate Galileiane"""
+https://galileoarchive.org/ISCHGalileo/item/event/GiornateGalileiane;schema:location;<https://www.geonames.org/3170647>
+https://galileoarchive.org/ISCHGalileo/item/event/GiornateGalileiane;schema:organizer;<https://www.comune.pisa.it/>
+https://galileoarchive.org/ISCHGalileo/item/event/GiornateGalileiane;schema:about;<http://viaf.org/viaf/2470550>

@@ -1,0 +1,17 @@
+subject;predicate;object
+https://galileoarchive.org/ISCHGalileo/item/book/Processo;rdf:Type;schema:Book
+https://galileoarchive.org/ISCHGalileo/item/book/Processo;schema:author;<http://viaf.org/viaf/71380890>
+https://galileoarchive.org/ISCHGalileo/item/book/Processo;schema:inLanguage;"""it"""
+https://galileoarchive.org/ISCHGalileo/item/book/Processo;schema:datePublished;"""1876"""
+https://galileoarchive.org/ISCHGalileo/item/book/Processo;schema:publisher;"""Tipografi del Senato"""
+https://galileoarchive.org/ISCHGalileo/item/book/Processo;schema:about;"""Biography Trials"""
+https://galileoarchive.org/ISCHGalileo/item/book/Processo;schema:about;<http://viaf.org/viaf/2470550>
+https://galileoarchive.org/ISCHGalileo/item/book/Processo;schema:identifier;"""OCLC:878100596"""
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;

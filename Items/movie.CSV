@@ -1,0 +1,16 @@
+subject;predicate;object;;;;;
+https://galileoarchive.org/ISCHGalileo/item/movie;rdf:Type;schema:Movie;;;;;
+https://galileoarchive.org/ISCHGalileo/item/movie;schema:director;<http://viaf.org/viaf/100261199>;;;;;
+https://galileoarchive.org/ISCHGalileo/item/movie;schema: datePublished;"""1969-2-14""";;;;;
+https://galileoarchive.org/ISCHGalileo/item/movie;schema:genre;"""Drama""";;;;;
+https://galileoarchive.org/ISCHGalileo/item/movie;schema:genre;"""Historical""";;;;;
+https://galileoarchive.org/ISCHGalileo/item/movie;schema:character;<http://viaf.org/viaf/2470550>;;;;;
+https://galileoarchive.org/ISCHGalileo/item/movie;schema:inLanguage;"""it""";;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;

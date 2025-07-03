@@ -1,0 +1,7 @@
+subject;predicate;object
+https://galileoarchive.org/ISCHGalileo/item/Coin;rdf:type;crm:E22_Human-Made_Object
+https://galileoarchive.org/ISCHGalileo/item/Coin;crm:P102_has_title;"""Italian 2€ Commemorative Coin for Galileo Galilei"""
+https://galileoarchive.org/ISCHGalileo/item/Coin;crm:P62_depicts;<http://viaf.org/viaf/2470550>
+https://galileoarchive.org/ISCHGalileo/item/Coin;crm:P108i_was_produced_by;<http://viaf.org/viaf/129891942>
+https://galileoarchive.org/ISCHGalileo/item/Coin;crm:P1_is_identified_by;"""comm_2014.it"""
+https://galileoarchive.org/ISCHGalileo/item/Coin;owl:sameAs;<https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014.it.html>
