@@ -1,0 +1,91 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
+<?xml-stylesheet type="text/xsl" href="Dialogo.xslt"?> <!--add xml version and encoding?-->
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title>Dialogo sopra i due massimi sistemi del mondo: a digital edition</title>
+                <author>
+                    <persName>
+                        <forename>Galileo</forename>
+                        <surname>Galilei</surname>
+                    </persName>
+                    <idno type="VIAF">http://viaf.org/viaf/2470550</idno>
+                </author>
+                <respStmt>
+                    <resp>Encoding</resp>
+                    <persName>Anna Nicoletti</persName>
+                    <persName>Nadia Calvisi</persName>
+                </respStmt>
+            </titleStmt>
+
+            <editionStmt>
+                <edition>Student's edition</edition>
+                <date when="2025">July 2025</date>
+            </editionStmt>
+
+            <publicationStmt>
+                <publisher>University of Bologna</publisher>
+                <pubPlace>Bologna</pubPlace>
+                <date when="2025">2025</date>
+                <availability>
+                    <p>This edition is available under a Creative Common Licence.</p>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence>
+                </availability> 
+            </publicationStmt>
+
+            <sourceDesc>
+                <bibl xml:id="Sosio_DialogoMassimiSistemi">
+                    <title>Dialogo sopra i due massimi sistemi del mondo</title>
+                    <author>
+                        <persName>
+                            <forename>Galileo</forename>
+                            <surname>Galilei</surname>
+                        </persName>
+                        <idno type="VIAF">http://viaf.org/viaf/2470550</idno>
+                    </author>
+                    <editor><name>Libero Sosio</name></editor>
+                    <pubPlace>Torino</pubPlace>
+                    <publisher>Einaudi</publisher>
+                    <date when="1970">1970</date>
+                </bibl>
+            </sourceDesc>         
+        </fileDesc>
+
+        <encodingDesc>
+            <listPerson>
+                <persName xml:id="#salviati" type="character">Salviati</persName>
+                <persName xml:id="#sagredo" type="character">Sagredo</persName>
+                <persName xml:id="#simplicio" type="character">Simplicio</persName>
+            </listPerson>
+        </encodingDesc>
+    </teiHeader>
+
+    <text xml:lang="ita">
+        <body>
+            <div type="chapter" n="1">
+                <head>Giornata Prima</head>       
+                    <div type="dialogue" xml:id="dialogue1">
+                        <speaker ref="#salviati">SALV.</speaker>
+                        <p>Fu la conclusione e l’appuntamento di ieri, che noi dovessimo in questo giorno discorrere...</p>
+                    </div>
+                    <div type="dialogue" xml:id="dialogue2">
+                        <speaker ref="#simplicio">SIMP.</speaker>
+                        <p>Mancano le dimostrazioni bellissime nel 2°, 3° e 4° testo, dopo la definizione di continuo?...</p>
+                    </div>
+                    <div type="dialogue" xml:id="dialogue3">
+                        <speaker ref="#salviati">SALV.</speaker>
+                        <p>Io, per dire il vero, in tutti questi discorsi non mi son sentito stringere a concedere altro se non che...</p>
+                    </div>
+                    <div type="dialogue" xml:id="dialogue4">
+                        <speaker ref="#simplicio">SIMP.</speaker>
+                        <p>Par che voi pigliate per ischerzo queste ragioni: e pure è tutta dottrina de i Pittagorici...</p>
+                    </div>
+                    <div type="dialogue" xml:id="dialogue5">
+                        <speaker ref="#salviati">SALV.</speaker>
+                        <p>Che i Pittagorici avessero in somma stima la scienza de’ numeri, e che Platone stesso ammirasse...</p>
+                    </div>
+            </div>
+        </body>
+    </text>
+</TEI>
+                
