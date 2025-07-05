@@ -1,0 +1,12 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.org/dialogo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:dialogo dc:creator ex:galileo ;
+    dc:date "2025"^^xsd:gYear ;
+    dc:title "Dialogo sopra i due massimi sistemi del mondo: annotated digital edition" .
+
+ex:galileo a foaf:Person ;
+    foaf:name "Galileo Galilei" .
+
