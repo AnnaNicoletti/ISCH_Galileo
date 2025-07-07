@@ -746,16 +746,59 @@
 					<!--code snippet-->
 					<div class="code_snippet">
 						<div class="code-box">
-							@prefix dc:
-							<http: //purl.org/dc/elements/1.1 /> .
-							@prefix ex:
-							<http: //example.org/galileo /> .
+@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix ex: &lt;http://example.org/dialogo/&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix schema1: &lt;http://schema.org/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
-							ex:dialogo a ex:Work ;
-							dc:title "Dialogo sopra i due massimi sistemi del mondo" ;
-							dc:creator ex:galilei ;
-							dc:date "1632" .
-							...
+ex:dialogo dc:contributor ex:LiberoSosio ;
+    dc:creator &lt;http://viaf.org/viaf/2470550&gt; ;
+    dc:date &quot;2025&quot;^^xsd:gYear ;
+    dc:publisher &quot;University of Bologna&quot; ;
+    dc:title &quot;Dialogo sopra i due massimi sistemi del mondo: annotated digital edition&quot; ;
+    dcterms:isReferencedBy ex:Sosio_DialogoMassimiSistemi ;
+    dcterms:license &lt;https://creativecommons.org/licenses/by-sa/4.0/&gt; ;
+    schema1:hasContributor [ a schema1:Role ;
+            schema1:performedBy ex:NadiaCalvisi ;
+            schema1:roleName &quot;Encoder&quot; ],
+        [ a schema1:Role ;
+            schema1:performedBy ex:AnnaNicoletti ;
+            schema1:roleName &quot;Encoder&quot; ] ;
+    schema1:location &quot;Bologna&quot; .
+
+ex:sagredo a foaf:Person ;
+    schema1:roleName &quot;character&quot; .
+
+ex:salviati a foaf:Person ;
+    schema1:roleName &quot;character&quot; .
+
+ex:simplicio a foaf:Person ;
+    schema1:roleName &quot;character&quot; .
+
+ex:AnnaNicoletti a foaf:Person ;
+    foaf:name &quot;Anna Nicoletti&quot; .
+
+ex:LiberoSosio a foaf:Person ;
+    foaf:name &quot;Libero Sosio&quot; .
+
+ex:NadiaCalvisi a foaf:Person ;
+    foaf:name &quot;Nadia Calvisi&quot; .
+
+ex:Sosio_DialogoMassimiSistemi a schema1:Book ;
+    dc:creator ex:biblAuthor ;
+    dc:date &quot;1970&quot;^^xsd:gYear ;
+    dc:publisher &quot;Einaudi&quot; ;
+    dc:title &quot;Dialogo sopra i due massimi sistemi del mondo&quot; ;
+    schema1:location &quot;Torino&quot; .
+
+ex:biblAuthor a foaf:Person ;
+    foaf:name &quot;Galileo Galilei&quot; .
+
+&lt;http://viaf.org/viaf/2470550&gt; a foaf:Person ;
+    foaf:name &quot;Galileo Galilei&quot; .
+
 						</div>
 					</div>
 					<!--code snippet-->

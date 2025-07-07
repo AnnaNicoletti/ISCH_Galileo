@@ -1,12 +1,53 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ex: <http://example.org/dialogo/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema1: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:dialogo dc:creator ex:galileo ;
+ex:dialogo dc:contributor ex:LiberoSosio ;
+    dc:creator <http://viaf.org/viaf/2470550> ;
     dc:date "2025"^^xsd:gYear ;
-    dc:title "Dialogo sopra i due massimi sistemi del mondo: annotated digital edition" .
+    dc:publisher "University of Bologna" ;
+    dc:title "Dialogo sopra i due massimi sistemi del mondo: annotated digital edition" ;
+    dcterms:isReferencedBy ex:Sosio_DialogoMassimiSistemi ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    schema1:hasContributor [ a schema1:Role ;
+            schema1:performedBy ex:NadiaCalvisi ;
+            schema1:roleName "Encoder" ],
+        [ a schema1:Role ;
+            schema1:performedBy ex:AnnaNicoletti ;
+            schema1:roleName "Encoder" ] ;
+    schema1:location "Bologna" .
 
-ex:galileo a foaf:Person ;
+ex:sagredo a foaf:Person ;
+    schema1:roleName "character" .
+
+ex:salviati a foaf:Person ;
+    schema1:roleName "character" .
+
+ex:simplicio a foaf:Person ;
+    schema1:roleName "character" .
+
+ex:AnnaNicoletti a foaf:Person ;
+    foaf:name "Anna Nicoletti" .
+
+ex:LiberoSosio a foaf:Person ;
+    foaf:name "Libero Sosio" .
+
+ex:NadiaCalvisi a foaf:Person ;
+    foaf:name "Nadia Calvisi" .
+
+ex:Sosio_DialogoMassimiSistemi a schema1:Book ;
+    dc:creator ex:biblAuthor ;
+    dc:date "1970"^^xsd:gYear ;
+    dc:publisher "Einaudi" ;
+    dc:title "Dialogo sopra i due massimi sistemi del mondo" ;
+    schema1:location "Torino" .
+
+ex:biblAuthor a foaf:Person ;
+    foaf:name "Galileo Galilei" .
+
+<http://viaf.org/viaf/2470550> a foaf:Person ;
     foaf:name "Galileo Galilei" .
 

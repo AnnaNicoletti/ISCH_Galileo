@@ -260,7 +260,7 @@ main {
 .background_image {
 	width: auto;
 	height: 100vh;
-	background-image: url("/images/background_image_index.jpg");
+	background-image: url("../../images/background_image_index.jpg");
 	position: relative;
 	background-position-x: -70%;
 	background-position-y: bottom;
