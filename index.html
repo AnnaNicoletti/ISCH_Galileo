@@ -40,10 +40,9 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="rdf.html">RDF Dataset</a></li>
+							<li><a href="xml.html">From TEI/XML to HTML</a></li>
+							<li><a href="generic.html">About the Project</a></li>
 						</ul>
 					</nav>
 					<!--menu-->
@@ -89,14 +88,14 @@ This work embraces a multidisciplinary approach, combining historical research, 
 					<div class="items_description">
 						<p>Below you will find ten items related to Galileo Galilei. Each item is presented as a clickable card that opens a modal window with two sections:
 							<ul>
-								<li><i><b>Theoretical Model:</b></i></br>
+								<li><b>Theoretical Model:</b></br>
 								A table expressing the item's core relationships in natural language, following the Subject–Predicate–Object pattern.
 								</li>
-								<li><i><b>Conceptual Model</i></b></br>
+								<li><b>Conceptual Model</b></br>
 								A parallel table where the same relations are formalized using standard metadata vocabularies (such as schema.org, Dublin Core, CIDOC CRM, EAC-CPF, PRO, etc.).
 							</ul>
 						</p>
-						<p>📌 Click on an item to explore its data models.</p>
+						<p><i><b>📌 Click on an item to explore its data models.</b></i></p>
 					</div>
 					<!--items description-->
 
@@ -213,18 +212,89 @@ This work embraces a multidisciplinary approach, combining historical research, 
 							</a>
 						</article>
 					</div>
+					<!--actual items-->
 
 					<!--modals-->
-					<div class="modal fade modal-lg" id="galileoMovieModal" tabindex="-1"
-						aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
+					<div class="modals">
+						<div class="modal fade modal-lg" id="galileoMovieModal" tabindex="-1"
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<<h2>Theoretical Model</h2>
+											<table class="table">
+												<thead>
+													<tr>
+														<th scope="col">Subject</th>
+														<th scope="col">Predicate</th>
+														<th scope="col">Object</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<td>John</td>
+														<td>Doe</td>
+														<td>@social</td>
+													</tr>
+												</tbody>
+											</table>
+
+											<h2>Conceptual Model</h2>
+											<table class="table">
+												<thead>
+													<tr>
+														<th scope="col">Subject</th>
+														<th scope="col">Predicate</th>
+														<th scope="col">Object</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<td>John</td>
+														<td>Doe</td>
+														<td>@social</td>
+													</tr>
+												</tbody>
+											</table>
+									</div>
 								</div>
-								<div class="modal-body">
-									<<h2>Theoretical Model</h2>
+							</div>
+						</div>
+
+						<div class="modal fade modal-lg" id="vitaGalileoModal" tabindex="-1"
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h2>Theoretical Model</h2>
 										<table class="table">
 											<thead>
 												<tr>
@@ -279,684 +349,641 @@ This work embraces a multidisciplinary approach, combining historical research, 
 												</tr>
 											</tbody>
 										</table>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="modal fade modal-lg" id="vitaGalileoModal" tabindex="-1"
-						aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<h2>Theoretical Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
+						<div class="modal fade modal-lg" id="dialogoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h2>Theoretical Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
 
-									<h2>Conceptual Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="modal fade modal-lg" id="dialogoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-						aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<h2>Theoretical Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
-
-									<h2>Conceptual Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
+										<h2>Conceptual Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="modal fade modal-lg" id="giornateGalielianeModal" tabindex="-1"
-						aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<h2>Theoretical Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
+						<div class="modal fade modal-lg" id="giornateGalielianeModal" tabindex="-1"
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h2>Theoretical Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
 
-									<h2>Conceptual Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="modal fade modal-lg" id="processoModal" tabindex="-1"
-						aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<h2>Theoretical Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
-
-									<h2>Conceptual Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
+										<h2>Conceptual Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="modal fade modal-lg" id="urbanoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-						aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<h2>Theoretical Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
+						<div class="modal fade modal-lg" id="processoModal" tabindex="-1"
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h2>Theoretical Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
 
-									<h2>Conceptual Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="modal fade modal-lg" id="medalModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-						aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<h2>Theoretical Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
-
-									<h2>Conceptual Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
+										<h2>Conceptual Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="modal fade modal-lg" id="macchieModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-						aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<h2>Theoretical Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
+						<div class="modal fade modal-lg" id="urbanoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h2>Theoretical Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
 
-									<h2>Conceptual Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="modal fade modal-lg" id="saturnModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-						aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<h2>Theoretical Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
-
-									<h2>Conceptual Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
+										<h2>Conceptual Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="modal fade modal-lg" id="coinModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-						aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
+						<div class="modal fade modal-lg" id="medalModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h2>Theoretical Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<h2>Conceptual Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
-								<div class="modal-body">
-									<h2>Theoretical Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
+							</div>
+						</div>
 
-									<h2>Conceptual Model</h2>
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Subject</th>
-												<th scope="col">Predicate</th>
-												<th scope="col">Object</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Mark</td>
-												<td>Otto</td>
-												<td>@mdo</td>
-											</tr>
-											<tr>
-												<td>Jacob</td>
-												<td>Thornton</td>
-												<td>@fat</td>
-											</tr>
-											<tr>
-												<td>John</td>
-												<td>Doe</td>
-												<td>@social</td>
-											</tr>
-										</tbody>
-									</table>
+						<div class="modal fade modal-lg" id="macchieModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h2>Theoretical Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<h2>Conceptual Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="modal fade modal-lg" id="saturnModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h2>Theoretical Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<h2>Conceptual Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="modal fade modal-lg" id="coinModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h2>Theoretical Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<h2>Conceptual Model</h2>
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Subject</th>
+													<th scope="col">Predicate</th>
+													<th scope="col">Object</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mark</td>
+													<td>Otto</td>
+													<td>@mdo</td>
+												</tr>
+												<tr>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<td>John</td>
+													<td>Doe</td>
+													<td>@social</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<!--modals-->
+
+					
 				</section>
 				<!--items-->
+
+				<!--graph section-->
+				<section class="graph">
+					<!--graph title-->
+					<div class="graph_title">
+						<h2>Complete Conceptual Graph</h2>
+						<hr class="graph_hr">
+					</div>
+					<!--graph title-->
+
+					<!--graph description-->
+					<div class="graph_description">
+						<p>The diagram below represents the complete conceptual graph of the project, showing how all ten items are semantically
+						connected to each other.</br>
+						It was created using the Graffoo notation (Graphical Framework for OWL Ontologies), a visual standard for representing
+						RDF/OWL knowledge structures, and designed with yEd software.
+						</p>
+						<p>This graph translates the conceptual model of the project into a single visual structure, making explicit the
+							relationships between people, works, events, and concepts related to Galileo Galilei.</p>
+						</br>
+						<p><i><b>📌 Click on the graph, then zoom and pan to understand how the different entities interact across the dataset.</b></i></p>
+					</div>
+					<!--graph description-->
+
+					<!--actual graph-->
+					<div class="graffoo_graph">
+						<div style="position: relative; display: inline-block;">
+						<object type="image/svg+xml" data="images/galileo_galilei.svg" alt="Conceptual Graph Thumbnail" class="svg-thumbnail"></object>
+						<div  id="openModal" style="
+							position: absolute;
+							top: 0; left: 0;
+							width: 100%; height: 100%;
+							cursor: zoom-in;
+							z-index: 10;">
+						</div>
+					</div>
+					</div>
+					<!--actual graph-->
+
+					<!--modal-->
+					<div class="modal-overlay" id="modal">
+						<div class="modal-content" style="border-radius: 25px;">
+						<span class="close-btn" id="closeModal">&times;</span>
+						<div class="zoom-container" style="border-radius: 25px;">
+							<!-- SVG embedded here -->
+							<object type="image/svg+xml" data="images/galileo_galilei.svg" class="modal-svg"></object>
+						</div>
+						</div>
+					</div>
+					<!--modal-->
+
+				</section>
+				<!--graph section-->
+				
 			</div>
 		</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<section>
-					<h2>Get in touch</h2>
-					<form method="post" action="#">
-						<div class="fields">
-							<div class="field half">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="field half">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="field">
-								<textarea name="message" id="message" placeholder="Message"></textarea>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send" class="primary" /></li>
-						</ul>
-					</form>
-				</section>
-				<section>
-					<h2>Follow</h2>
-					<ul class="icons">
-						<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a>
-						</li>
-						<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
-						</li>
-						<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
-						</li>
-						<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a>
-						</li>
-						<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-						<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-						<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</section>
-				<ul class="copyright">
-					<li>&copy; Untitled. All rights reserved</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
+		<!--Main-->
 
 	</div>
+	<!--Wrapper-->
+
+	<!--footer-->
+	<footer>
+        <div class="footer-content">
+            <h3>Galielo Galilei</h3>
+            <p>Created by Anna Nicoletti and Nadia Calvisi for the course "<i>Information Science and Cultural Heritage</i>" within the master degree course Digital Humanities and Digital Knowledge at the University of Bologna.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>© Untitled. All rights reserved. | Design: HTML5 UP, Nadia Calvisi, Anna Nicoletti</p>
+        </div>
+
+    </footer>
+	<!--footer-->
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
@@ -966,6 +993,26 @@ This work embraces a multidisciplinary approach, combining historical research, 
 	<script src="assets/js/main.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-... (troncato)" crossorigin="anonymous"></script>
+
+	<script>
+    const modal = document.getElementById('modal');
+    const openBtn = document.getElementById('openModal');
+    const closeBtn = document.getElementById('closeModal');
+
+    openBtn.addEventListener('click', () => {
+      modal.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
 
 
 </body>
