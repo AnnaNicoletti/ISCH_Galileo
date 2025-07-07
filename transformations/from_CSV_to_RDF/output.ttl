@@ -1,0 +1,80 @@
+@base <https://galileoarchive.org/ISCHGalileo/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema1: <http://schema.org/> .
+
+<item/Coin> a crm:E22_Human-Made_Object ;
+    crm:P102_has_title "Italian 2 Commemorative Coin for Galileo Galilei" ;
+    crm:P108i_was_produced_by "<http://viaf.org/viaf/129891942>" ;
+    crm:P1_is_identified_by "comm_2014.it" ;
+    crm:P62_depicts "<http://viaf.org/viaf/2470550>" ;
+    owl:sameAs "<https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014.it.html>" .
+
+<item/Medaglia> a schema1:Thing ;
+    schema1:additionalType schema1:Award ;
+    schema1:location "<https://www.geonames.org/3175395>" ;
+    schema1:name "Medaglia Galileo Galilei" ;
+    schema1:sponsor "<http://viaf.org/viaf/126571826>" ;
+    schema1:startDate "2019" .
+
+<item/book/Dialogo> a schema1:Book ;
+    schema1:author "<http://viaf.org/viaf/2470550>" ;
+    schema1:datePublished "1632" ;
+    schema1:genre "Astronomy",
+        "Popular Science" ;
+    schema1:identifier "OCLC:1128337506" ;
+    schema1:inLanguage "it" .
+
+<item/book/Processo> a schema1:Book ;
+    schema1:about "<http://viaf.org/viaf/2470550>",
+        "Biography Trials" ;
+    schema1:author "<http://viaf.org/viaf/71380890>" ;
+    schema1:datePublished "1876" ;
+    schema1:identifier "OCLC:878100596" ;
+    schema1:inLanguage "it" ;
+    schema1:publisher "Tipografi del Senato" .
+
+<item/book/VitaDiGalileo> a schema1:Book ;
+    schema1:author "<http://viaf.org/viaf/2467372>",
+        "<http://viaf.org/viaf/90636464>" ;
+    schema1:datePublished "2015" ;
+    schema1:genre "Drama",
+        "Epic Theatre" ;
+    schema1:identifier "OCLC:1277290792" ;
+    schema1:inLanguage "it" .
+
+<item/drawing/Macchie> a crm:E22_Human-Made_Object ;
+    crm:P102_has_title "Disegni delle Macchie Solari" ;
+    crm:P108i_was_produced_by ":Istoria_E_Dimostrazioni_Production" ;
+    crm:P46i_forms_part_of "<https://opac.bncf.firenze.sbn.it/Record/TO0E124146>" .
+
+<item/event/GiornateGalileiane> a schema1:Event ;
+    schema1:about "<http://viaf.org/viaf/2470550>" ;
+    schema1:location "<https://www.geonames.org/3170647>" ;
+    schema1:name "Giornate Galileiane" ;
+    schema1:organizer "<https://www.comune.pisa.it/>" .
+
+<item/movie> a schema1:Movie ;
+    schema1:character "<http://viaf.org/viaf/2470550>" ;
+    schema1:datePublished "1969-2-14" ;
+    schema1:director "<http://viaf.org/viaf/100261199>" ;
+    schema1:genre "Drama",
+        "Historical" ;
+    schema1:inLanguage "it" .
+
+<item/painting/Saturn> a schema1:VisualArtwork ;
+    schema1:alternateName "Saturn" ;
+    schema1:artform "<https://www.wikidata.org/wiki/Q296955>" ;
+    schema1:artworkSurface "<https://www.wikidata.org/wiki/Q4259259>" ;
+    schema1:creator "<http://viaf.org/viaf/56647196>" ;
+    schema1:dateCreated "1636" ;
+    schema1:name "Saturno devorando a un hijo" .
+
+<person/UrbanoVIII> a schema1:Person ;
+    schema1:birthDate "1568-04" ;
+    schema1:deathDate "1644-07-29" ;
+    schema1:hasRole "<http://viaf.org/viaf/137124612>" ;
+    schema1:name "Urbano VIII" ;
+    schema1:nationality "Italian" ;
+    schema1:sameAs "<http://viaf.org/viaf/96062867>" .
+
