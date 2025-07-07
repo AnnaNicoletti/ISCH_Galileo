@@ -447,7 +447,7 @@ background-color: #f5f3f1;
 
 /*tables and buttons*/
 .table_and_buttons {
-	width: 90%;
+	width: 100%;
 	display: flex;
 	position: relative;
 	flex-direction: row;
@@ -459,7 +459,7 @@ background-color: #f5f3f1;
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	width: 30%;
+	width: 20%;
 }
 
 label.item_btn {
@@ -485,7 +485,7 @@ label.item_btn {
   }
 
 .all_tables {
-	width: 70%;
+	width: 75%;
 }
 
 .tab-radio {
@@ -537,7 +537,8 @@ label.item_btn {
 }
 
 .table {
-  font-size: 16pt;
+  font-size: 14pt;
+
 }
 
 
