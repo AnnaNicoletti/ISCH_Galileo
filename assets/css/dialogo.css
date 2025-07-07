@@ -289,11 +289,11 @@ main {
 	align-items: center;
 }
 
-.description h2 {
+h2 {
 	font-size: 3em;
 	font-weight: 700;
 	line-height: 1.3;
-	margin: 0 0 0 4vw;
+	margin: 0 0 0 9.5vw;
 	letter-spacing: -0.035em;
 	color: #26619C;
 }
@@ -353,7 +353,8 @@ main {
 	justify-content: center;
 }
 
-.tei_title h2 {
+h2 {
+    padding-top: 10vh;
 	font-size: 3em;
 	font-weight: 700;
 	line-height: 1.3;
@@ -529,16 +530,36 @@ label.item_btn {
   display: block;
 }
 
-.table > thead > tr > th,
-.table > tbody > tr > td {
+table > thead > tr > th,
+table > tbody > tr > td {
   padding-top: 1rem;  
   padding-bottom: 1rem; 
   color: #26619C;
 }
 
-.table {
+table {
   font-size: 14pt;
   color: #003262;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10vh;
+  
+}
+
+.speech {
+    width: 80%;
+    margin-left: 7em;
+    margin-bottom: 7vh;
+}
+
+h4 {
+    font-size: 2em;
+	font-weight: 700;
+	line-height: 1.3;
+	margin: 15vh 0 0 3.5em;
+	letter-spacing: -0.035em;
+	color: #26619C;
+    margin-bottom: 5vh;
 }
 
 
@@ -1243,10 +1264,7 @@ label.item_btn {
 		overflow-x: auto;
 	}
 
-	table {
-		margin: 0 0 2em 0;
-		width: 100%;
-	}
+	
 
 		table tbody tr {
 			border: solid 1px #c9c9c9;
