@@ -7,6 +7,7 @@
     <xsl:template match="/">
         <html>
             <head>
+                <link rel="stylesheet" href="../../assets/css/dialogo.css" />
                 <style>
                     /* Stile base per la tabella */
                     table {
@@ -100,13 +101,16 @@
                         <xsl:value-of select="/tei:TEI/tei:text/tei:body/tei:div[@type='chapter']/tei:head"/>
                     </h4>
                     
-                    <!-- Itera solo sui dialoghi dentro l’unico capitolo -->
-                    <xsl:for-each select="/tei:TEI/tei:text/tei:body/tei:div[@type='chapter']/tei:div[@type='dialogue']">
-                        <p>
-                            <strong><xsl:value-of select="tei:speaker"/></strong>
-                            <xsl:text>: </xsl:text>
-                            <xsl:value-of select="tei:p"/>
-                        </p>
+                    <xsl:for-each select="/tei:TEI/tei:text/tei:body/tei:div[@type='chapter']/tei:div[@type='dialogue']/tei:sp">
+                        <div class="speech">
+                            <p><strong><xsl:value-of select="tei:speaker"/></strong></p>
+                            <!-- Itera sui paragrafi -->
+                            <xsl:for-each select="tei:p">
+                                <p>
+                                    <xsl:apply-templates select="."/>
+                                </p>
+                            </xsl:for-each>
+                        </div>
                     </xsl:for-each>
                     
                     
