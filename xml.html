@@ -1,0 +1,360 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Xml</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/xml.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+qdLa+... (troncato)" crossorigin="anonymous">
+	</head>
+
+	<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<!--background image-->
+				<div class="background_image">
+					<!--menu-->
+					<nav>
+						<ul>
+							<li><a href="#menu">Menu</a></li>
+						</ul>
+					</nav>
+
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="rdf.html">RDF Dataset</a></li>
+							<li><a href="xml.html">From TEI/XML to HTML</a></li>
+						</ul>
+					</nav>
+					<!--menu-->
+
+					<!--title and subtitle-->
+					<header>
+						<h1>From TEI/XML to HTML: A Digital Edition of Galileo’s <i>Dialogo</i></h1>
+						<p class="subtitle">Encoding, Transforming, and Presenting a Canonical Text of Modern Science</p>
+					</header>
+					<!--title and subtitle-->
+				</div>
+				<!--background image-->
+
+				<!--tei descripition-->
+				<div class="description">
+					<!--title description-->
+					<div class="description_title">
+						<h2>About the TEI Encoding</h2>
+						<hr class="description_hr">
+					</div>
+					<!--title description-->
+
+					<!--text description-->
+					<p>As part of the LODLAM project on Galileo Galilei, this section presents a digital edition of the <i>Dialogo sopra i
+						due massimi sistemi del mondo</i>,
+						encoded in XML following the standards of the <a href="https://tei-c.org" target="_blank">Text Encoding Initiative
+						(TEI)</a>. The edition focuses on semantic markup of the text's structure, characters, dialogue sections, bibliographic metadata, and editorial provenance.
+					</p>
+					<p>The TEI file includes:
+						<ul>
+							<li>A full <code>&lt;teiHeader&gt;</code> with bibliographic and editorial metadata</li>
+							<li>Encoding of front matter and editorial notes</li>
+							<li>Detailed markup of dialogues with participants</li>
+							<li>Named entities and measurement units</li>
+						</ul>
+					</p>
+					<!--text description-->
+				</div>
+				<!--tei descripition-->		
+				
+				<!--tei excerpt-->
+				<div class="tei_description">
+					<!--title description-->
+					<div class="tei_title">
+						<hr class="tei_hr">
+						<h2>TEI/XML Source Excerpt</h2>
+						
+					</div>
+					<!--title description-->
+
+					<!--text description-->
+					 <p>You can view a representative sample of the encoded XML below. The original file is available for download.	
+					</p>
+					<p class="download"><a href="transformations\from_XML_to_HTML\dialogo.xml" class="download-link" download>📄 Download full TEI file</a>
+					 	</p>
+					 
+					<!--text description-->
+
+					<!--code snippet-->
+					<div class="code-box">
+						<div class="code">
+&lt;TEI xmlns=&quot;http://www.tei-c.org/ns/1.0&quot;&gt; 
+    &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;dialogo.xslt&quot;?&gt; &lt;!--add xml version and encoding?--&gt;
+    &lt;teiHeader xml:lang=&quot;eng&quot;&gt;
+        &lt;fileDesc&gt;
+            &lt;titleStmt&gt;
+                &lt;title&gt;Dialogo sopra i due massimi sistemi del mondo: annotated digital edition&lt;/title&gt;
+                &lt;author&gt;
+                    &lt;persName&gt;
+                        &lt;forename&gt;Galileo&lt;/forename&gt;
+                        &lt;surname&gt;Galilei&lt;/surname&gt;
+                        &lt;idno type=&quot;VIAF&quot;&gt;http://viaf.org/viaf/2470550&lt;/idno&gt;
+                    &lt;/persName&gt;
+                    
+                &lt;/author&gt;
+                &lt;respStmt&gt;
+                    &lt;resp&gt;Encoding&lt;/resp&gt;
+                    &lt;persName&gt;Anna Nicoletti&lt;/persName&gt;
+                    &lt;persName&gt;Nadia Calvisi&lt;/persName&gt;
+                &lt;/respStmt&gt;
+            &lt;/titleStmt&gt;
+            
+            &lt;editionStmt&gt;
+                &lt;edition&gt;
+                    &lt;title&gt;Student's annotated edition&lt;/title&gt;
+                    &lt;date when=&quot;2025&quot;&gt;July 2025&lt;/date&gt;
+                &lt;/edition&gt;
+            &lt;/editionStmt&gt;
+            
+            &lt;publicationStmt&gt;
+                &lt;publisher&gt;University of Bologna&lt;/publisher&gt;
+                &lt;pubPlace&gt;Bologna&lt;/pubPlace&gt;
+                &lt;date when=&quot;2025&quot;&gt;2025&lt;/date&gt;
+                &lt;availability&gt;
+                    &lt;p&gt;This edition is available under a Creative Common Licence.&lt;/p&gt;
+                    &lt;licence target=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;CC BY-SA 4.0&lt;/licence&gt;
+                &lt;/availability&gt; 
+            &lt;/publicationStmt&gt;
+            
+            &lt;sourceDesc&gt;
+                &lt;bibl xml:id=&quot;Sosio_DialogoMassimiSistemi&quot;&gt;
+                    &lt;title&gt;Dialogo sopra i due massimi sistemi del mondo&lt;/title&gt;
+                    &lt;author&gt;
+                        &lt;persName&gt;
+                            &lt;forename&gt;Galileo&lt;/forename&gt;
+                            &lt;surname&gt;Galilei&lt;/surname&gt;
+                            &lt;idno type=&quot;VIAF&quot;&gt;http://viaf.org/viaf/2470550&lt;/idno&gt;
+                        &lt;/persName&gt;
+                        
+                    &lt;/author&gt;
+                    &lt;editor&gt;
+                        &lt;persName&gt;Libero Sosio&lt;/persName&gt;
+                    &lt;/editor&gt;
+                    &lt;pubPlace&gt;Torino&lt;/pubPlace&gt;
+                    &lt;publisher&gt;Einaudi&lt;/publisher&gt;
+                    &lt;date when=&quot;1970&quot;&gt;1970&lt;/date&gt;
+                &lt;/bibl&gt;
+            &lt;/sourceDesc&gt;         
+        &lt;/fileDesc&gt;
+        
+        &lt;profileDesc&gt;
+            &lt;particDesc&gt;
+                &lt;listPerson&gt;
+                    &lt;person xml:id=&quot;salviati&quot; role=&quot;character&quot;/&gt;
+                    &lt;person xml:id=&quot;sagredo&quot; role=&quot;character&quot;/&gt;
+                    &lt;person xml:id=&quot;simplicio&quot; role=&quot;character&quot;/&gt;
+                &lt;/listPerson&gt;
+            &lt;/particDesc&gt;
+        &lt;/profileDesc&gt;
+
+    &lt;/teiHeader&gt;
+    
+    &lt;text xml:lang=&quot;ita&quot;&gt;
+        &lt;!--Titolo e Frontespizio--&gt;
+        &lt;front&gt;
+            &lt;titlePage&gt;
+                &lt;docTitle&gt;
+                    &lt;titlePart type=&quot;main&quot;&gt;Dialogo sopra i due massimi sistemi&lt;/titlePart&gt;
+                    &lt;titlePart type=&quot;sub&quot;&gt;Di Galileo Galilei&lt;/titlePart&gt;
+                &lt;/docTitle&gt;
+            &lt;/titlePage&gt;
+            
+            &lt;div type=&quot;editorialNote&quot;&gt;
+                &lt;head&gt;Edizione di riferimento:&lt;/head&gt;
+                &lt;p&gt;Dialogo sopra i due massimi sistemi del mondo, a cura di Libero Sosio, Einaudi, Torino 1970&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/front&gt;
+        &lt;!--Titolo e Frontespizio--&gt;
+        
+        &lt;!--Corpo del Testo--&gt;
+        &lt;body&gt;
+            &lt;div type=&quot;chapter&quot; n=&quot;1&quot;&gt;
+                &lt;head&gt;Giornata Prima&lt;/head&gt;       
+                &lt;div type=&quot;dialogue&quot; xml:id=&quot;dialogue1&quot;&gt;
+                    &lt;sp who=&quot;#salviati&quot;&gt;
+                        &lt;speaker&gt;SALV.&lt;/speaker&gt;
+                        &lt;p&gt;Fu la conclusione e l'appuntamento di ieri, che noi dovessimo in questo giorno discorrere,
+                            quanto pi&ugrave; distintamente e particolarmente per noi si potesse, intorno alle ragioni naturali 
+                            e loro efficacia, che per l'una parte e per l'altra sin qui sono state prodotte da i fautori 
+                            della posizione &lt;name type=&quot;schoolOfThought&quot;&gt;Aristotelica&lt;/name&gt; e &lt;name type=&quot;schoolOfThought&quot;&gt;Tolemaica&lt;/name&gt; 
+                            e da i seguaci del &lt;name type=&quot;schoolOfThought&quot;&gt;sistema Copernicano&lt;/name&gt;. E perch&eacute; collocando
+                            il &lt;name type=&quot;person&quot;&gt;Copernico&lt;/name&gt; la Terra tra i corpi mobili del cielo, viene a farla essa ancora un globo simile a un pianeta,
+                            sar&agrave; bene che il principio delle nostre considerazioni sia l'andare esaminando quale e quanta sia
+                            la forza e l'energia de i progressi peripatetici nel dimostrare come tale assunto sia del tutto 
+                            impossibile; attesoch&eacute; sia necessario introdurre in natura sustanze diverse tra di loro, cio&egrave; 
+                            la celeste e la elementare, quella impassibile ed immortale, questa alterabile e caduca. Il quale 
+                            argomento tratta egli nei &lt;title type=&quot;main&quot; level=&quot;m&quot;&gt;libri del Cielo&lt;/title&gt;, insinuandolo prima con discorsi dependenti da alcuni 
+                            assunti generali, e confermandolo poi con esperienze e con dimostrazioni particolari, lo, seguendo 
+                            l'istesso ordine, proporr&ograve;, e poi liberamente dir&ograve; il mio parere, esponendomi alla censura di voi, 
+                            ed in particolare del signor &lt;name type=&quot;person&quot; ref=&quot;#simplicio&quot;&gt;Simplicio&lt;/name&gt;, tanto strenuo 
+                            campione e mantenitore della &lt;name type=&quot;schoolOfThought&quot;&gt;dottrina Aristotelica&lt;/name&gt;.
+                            &Egrave; il primo passo del progresso peripatetico quello dove &lt;name type=&quot;person&quot;&gt;Aristotile&lt;/name&gt; 
+                            prova la integrit&agrave; e perfezione del mondo coN&rsquo;additarci com'ei non &egrave; una semplice linea n&eacute; una superficie pura, 
+                            ma un corpo adornato di &lt;measure&gt;lunghezza, di larghezza e di profondit&agrave;&lt;/measure&gt;; e perch&eacute; le &lt;measure&gt;dimensioni&lt;/measure&gt;
+                            non son pi&ugrave; che queste &lt;num type=&quot;cardinal&quot; value=&quot;3&quot;&gt;tre&lt;/num&gt;, avendole egli, le ha tutte, ed avendo il tutto, &egrave; perfetto. Che poi, 
+                            venendo dalla semplice &lt;measure&gt;lunghezza&lt;/measure&gt; costituita quella magnitudine che si chiama linea, aggiunta 
+                            la &lt;measure&gt;larghezza&lt;/measure&gt; si costituisca la superficie, e sopragiunta &lt;measure&gt;l'altezza o profondit&agrave;&lt;/measure&gt; ne risulti il corpo, 
+                            e che doppo queste tre dimensioni non si dia passaggio ad altra, si che in queste &lt;num type=&quot;cardinal&quot; value=&quot;3&quot;&gt;tre&lt;/num&gt; sole si 
+                            termini l'integrit&agrave; e per cosi dire la totalit&agrave;, averei ben desiderato che da &lt;name type=&quot;person&quot;&gt;Aristotile&lt;/name&gt; mi fusse 
+                            stato dimostrato con necessit&agrave;, e massime potendosi ci&ograve; esequire assai chiaro e speditamente.
+                        &lt;/p&gt;
+                    &lt;/sp&gt;
+                &lt;/div&gt;
+                &lt;div type=&quot;dialogue&quot; xml:id=&quot;dialogue2&quot;&gt;
+                    &lt;sp who=&quot;#simplicio&quot;&gt;
+                        &lt;speaker&gt;SIMP.&lt;/speaker&gt;
+                        &lt;p&gt;Mancano le dimostrazioni bellissime nel &lt;num type=&quot;ordinal&quot; value=&quot;2&quot;&gt;2&deg;&lt;/num&gt;, 3&deg; e 4&deg; testo, doppo 
+                            la definizione del continuo? Non avete, primieramente, che oltre alle &lt;num type=&quot;cardinal&quot; value=&quot;3&quot;&gt;tre&lt;/num&gt; 
+                            dimensioni non ve n'&egrave; altra, perch&eacute; il &lt;num type=&quot;cardinal&quot; value=&quot;3&quot;&gt;tre&lt;/num&gt; &egrave; ogni cosa, 
+                            e 'I &lt;num type=&quot;cardinal&quot; value=&quot;3&quot;&gt;tre&lt;/num&gt; &egrave; per tutte le bande? e ci&ograve; non vien egli confermato 
+                            con l'autorit&agrave; e dottrina de i &lt;name type=&quot;schoolOfThought&quot;&gt;Pittagorici&lt;/name&gt;, 
+                            che dicono che tutte le cose son determinate da &lt;num type=&quot;cardinal&quot; value=&quot;3&quot;&gt;tre&lt;/num&gt;, principio, 
+                            mezo e fine, che &egrave; il numero del tutto? E dove lasciate voi l'altra ragione, cio&egrave; che, quasi per legge 
+                            naturale, cotal numero si usa ne' sacrifizii degli Dei? e che, dettante pur cosi la natura, alle cose 
+                            che son &lt;num type=&quot;cardinal&quot; value=&quot;3&quot;&gt;tre&lt;/num&gt;, e non a meno, attribuiscono il titolo di tutte? 
+                            perch&eacute; di &lt;num type=&quot;cardinal&quot; value=&quot;2&quot;&gt;due&lt;/num&gt; si dice amendue, e non si dice tutte; ma di &lt;num type=&quot;cardinal&quot; value=&quot;3&quot;&gt;tre&lt;/num&gt;, 
+                            si bene. E tutta questa dottrina l'avete nel testo &lt;num type=&quot;ordinal&quot; value=&quot;2&quot;&gt;2&deg;&lt;/num&gt;. Nel &lt;num type=&quot;ordinal&quot; value=&quot;3&quot;&gt;3&deg;&lt;/num&gt; 
+                            poi, ad pleniorem scientiam, si legge che l'ogni cosa, il tutto, e 'I perfetto, 
+                            formalmente son l'istesso; e che per&ograve; solo il corpo tra le grandezze &egrave; perfetto, 
+                            perch&eacute; esso solo &egrave; determinato da &lt;num type=&quot;cardinal&quot; value=&quot;3&quot;&gt;3&lt;/num&gt;, che &egrave; il tutto, ed essendo divisibile in &lt;num type=&quot;cardinal&quot; value=&quot;3&quot;&gt;tre&lt;/num&gt; modi, 
+                            &egrave; divisibile per tutti i versi: ma dell'altre, chi &egrave; divisibile in un modo, e chi in &lt;num type=&quot;cardinal&quot; value=&quot;2&quot;&gt;dua&lt;/num&gt;, 
+                            perch&eacute; secondo il numero che gli &egrave; toccato, cosi hanno la divisione e la continuit&agrave;: e cosi quella &egrave; continua per un verso, questa 
+                            per &lt;num type=&quot;cardinal&quot; value=&quot;2&quot;&gt;due&lt;/num&gt;, ma quello, cio&egrave; il corpo, per tutti. Di pi&ugrave; nel testo &lt;num type=&quot;ordinal&quot; value=&quot;4&quot;&gt;4&deg;&lt;/num&gt;, 
+                            doppo alcune altre dottrine, non prov'egli l'istesso con un'altra dimostrazione, cio&egrave; che non si facendo trapasso se non secondo qual-
+                            che mancamento (e cosi dalla linea si passa alla &lt;measure&gt;superficie&lt;/measure&gt;, perch&eacute; la linea &egrave; manchevole di &lt;measure&gt;larghezza&lt;/measure&gt;), 
+                            ed essendo impossibile che il perfetto manchi, essendo egli per tutte le bande, per&ograve; non si pu&ograve; passare 
+                            dal corpo ad altra &lt;measure&gt;magnitudine&lt;/measure&gt;? 0 r da tutti questi luoghi non vi par egli a sufficienza provato, com'oltre 
+                            alle &lt;num type=&quot;cardinal&quot; value=&quot;3&quot;&gt;tre&lt;/num&gt; &lt;measure&gt;dimensioni, lunghezza, larghezza e profondit&agrave;&lt;/measure&gt;, non si d&agrave; transito ad altra, e che per&ograve; il corpo, 
+                            che le ha tutte, &egrave; perfetto?
+                        &lt;/p&gt;
+                    &lt;/sp&gt;
+                &lt;/div&gt;
+                &lt;div type=&quot;dialogue&quot; xml:id=&quot;dialogue3&quot;&gt;
+                    &lt;sp who=&quot;#salviati&quot;&gt;
+                        &lt;speaker&gt;SALV.&lt;/speaker&gt;
+                        &lt;p&gt;lo, per dire il vero, in tutti questi discorsi non mi son sentito strignere a concedere altro se non che 
+                            quello che ha principio, mezo e fine, possa e deva dirsi perfetto: ma che poi, perch&eacute; principio, 
+                            mezo e fine son 3, il numero 3 sia numero perfetto, ed abbia ad aver facult&agrave; di conferir perfezione a 
+                            chi l'aver&agrave;, non sento io cosa che mi muova a concederlo: e non intendo e non credo che, verbigrazia, 
+                            per le gambe il numero &lt;num type=&quot;cardinal&quot; value=&quot;3&quot;&gt;3&lt;/num&gt; sia pi&ugrave; perfetto che 'I 
+                            &lt;num type=&quot;cardinal&quot; value=&quot;4&quot;&gt;4&lt;/num&gt; o il &lt;num type=&quot;cardinal&quot; value=&quot;2&quot;&gt;2&lt;/num&gt;; 
+                            n&eacute; so che 'I numero &lt;num type=&quot;cardinal&quot; value=&quot;4&quot;&gt;4&lt;/num&gt; sia d'imperfezione 
+                            a gli elementi, e che pi&ugrave; perfetto fusse eh' e' fusser &lt;num type=&quot;cardinal&quot; value=&quot;3&quot;&gt;3&lt;/num&gt;. 
+                            Meglio dunque era lasciar queste vaghezze a i retori e provar il suo intento con 
+                            dimostrazione necessaria, ch&eacute; cosi convien fare nelle scienze dimostrative.
+                        &lt;/p&gt;
+                    &lt;/sp&gt;
+                &lt;/div&gt;
+                &lt;div type=&quot;dialogue&quot; xml:id=&quot;dialogue4&quot;&gt;
+                    &lt;sp who=&quot;#simplicio&quot;&gt;
+                        &lt;speaker&gt;SIMP.&lt;/speaker&gt;
+                        &lt;p&gt;Par che voi pigliate per ischerzo queste ragioni: e pure &egrave; tutta dottrina de i &lt;name type=&quot;schoolOfThought&quot;&gt;Pittagorici&lt;/name&gt;, i quali 
+                            tanto attribuivano a i numeri: e voi, che sete matematico, e, credo anco, in molte opinioni filosofo 
+                            &lt;name type=&quot;schoolOfThought&quot;&gt;Pittagorico&lt;/name&gt;, pare che ora disprezziate i lor misteri.
+                        &lt;/p&gt;
+                    &lt;/sp&gt;
+                &lt;/div&gt;
+                &lt;div type=&quot;dialogue&quot; xml:id=&quot;dialogue5&quot;&gt;
+                    &lt;sp who=&quot;#salviati&quot;&gt;
+                        &lt;speaker&gt;SALV.&lt;/speaker&gt;
+                        &lt;p&gt;Che i &lt;name type=&quot;schoolOfThought&quot;&gt;Pittagorici&lt;/name&gt; avessero in somma stima la scienza de i numeri, 
+                            e che &lt;name type=&quot;person&quot;&gt;Platone&lt;/name&gt;name stesso ammirasse l'intelletto umano e lo stimasse partecipe di divinit&agrave; solo per l'intender egli la natura de' numeri, io benissimo lo so,
+                            n&eacute; sarei lontano dal farne l'istesso giudizio: ma che i misteri per i quali &lt;name type=&quot;person&quot;&gt;Pittagora&lt;/name&gt; 
+                            e la sua setta avevano in tanta venerazione la scienza de' numeri sieno le sciocchezze che vanno per le bocche e per le
+                            carte del volgo, non credo io in veruna maniera; anzi perch&eacute; so che essi, acci&ograve; le cose mirabili non fussero 
+                            esposte alle contumelie e al dispregio della plebe, dannavano come sacrilegio il publicar le pi&ugrave; recondite 
+                            propriet&agrave; de' numeri e delle quantit&agrave; incommensurabili ed irrazionali da loro investigate, e predicavano che 
+                            quello che le avesse manifestate era tormentato nell'altro mondo, penso che tal 
+                            &lt;num type=&quot;cardinal&quot; value=&quot;1&quot;&gt;uno&lt;/num&gt; di loro per dar pasto alla plebe e liberarsi dalle sue domande, 
+                            gli dicesse, i misterii loro numerali esser quelle leggerezze che poi si sparsero tra il vulgo, 
+                            e questo con astuzia ed accorgimento simile a quello del sagace giovane che, per torsi dattorno l'importunit&agrave; non so se della madre o della curiosa moglie che l'assediava acci&ograve; le conferisse i 
+                            segreti del senato, compose quella favola onde essa con molte altre donne rimasero dipoi, con gran risa del 
+                            medesimo senato, schernite.
+                        &lt;/p&gt;
+                    &lt;/sp&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+        &lt;!--Corpo del Testo--&gt;
+    &lt;/text&gt;
+&lt;/TEI&gt;
+						</div>
+					</div>
+					<!--code snippet-->
+				</div>
+				<!--tei excerpt-->
+
+				<!--html transformation-->
+				
+				<!--html transformation-->
+
+				<!--text description-->
+				<div class="description">
+                    <div class="tei_title">
+					<h2 style="margin-left: 2vw;">From TEI to HTML</h2>
+					<hr class="description_hr" style="width: 58%;">
+				</div>
+					<p> The XML file was transformed into HTML using a custom XSLT stylesheet. The transformation preserves structural divisions
+						(e.g., chapters, dialogue turns) and renders speaker names and textual content in a readable web format. The result is a browsable
+						HTML edition that allows easy access to the encoded content.
+						due massimi sistemi del mondo</i>,
+						encoded in XML following the standards of the <a href="https://tei-c.org" target="_blank">Text Encoding Initiative
+						(TEI)</a>. The edition focuses on semantic markup of the text's structure, characters, dialogue sections, bibliographic metadata, and editorial provenance.
+					</p>
+					 <p>You can view the HTML-transformed edition in a new tab:
+						<a href="transformations\from_XML_to_HTML\dialogo.html" target="_blank"><b>View Digital Edition</b></a>
+					</p>
+				</div>
+				<!--text description-->
+			</div>
+		</div>
+		<!--Main-->
+
+	</div>
+	<!--Wrapper-->
+
+	<!--footer-->
+	<footer>
+        <div class="footer-content">
+            <h3>Galileo Galilei</h3>
+            <p>Created by Anna Nicoletti and Nadia Calvisi for the course "<i>Information Science and Cultural Heritage</i>" within the master degree course Digital Humanities and Digital Knowledge at the University of Bologna.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>© Untitled. All rights reserved. | Design: HTML5 UP, Nadia Calvisi, Anna Nicoletti | <a href="https://github.com/AnnaNicoletti/ISCH_Galileo" class="icon brands style1 fa-github"></a></p>
+        </div>
+
+    </footer>
+	<!--footer-->
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-... (troncato)" crossorigin="anonymous"></script>
+	<!-- Scripts -->
+
+	</body>	
+</html>

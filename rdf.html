@@ -1,0 +1,837 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Rdf</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/rdf.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+qdLa+... (troncato)" crossorigin="anonymous">
+</head>
+
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<!--background image-->
+				<div class="background_image">
+					<!--menu-->
+					<nav>
+						<ul>
+							<li><a href="#menu">Menu</a></li>
+						</ul>
+					</nav>
+
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="rdf.html">RDF dataset</a></li>
+							<li><a href="xml.html">From TEI/XML to HMTL</a></li>
+						</ul>
+					</nav>
+					<!--menu-->
+
+					<!--title and subtitle-->
+					<header>
+						<h1>Galileo – RDF Dataset</h1>
+						<p>A semantic representation of Galileo-related cultural heritage resources</p>
+					</header>
+					<!--title and subtitle-->
+				</div>
+				<!--background image-->
+
+				<!--project descripition-->
+				<div class="description">
+					<!--title description-->
+					<div class="description_title">
+						<h2>Methodology</h2>
+						<hr class="description_hr">
+					</div>
+					<!--title description-->
+
+					<!--text description-->
+					<p>The RDF dataset describes a curated selection of ten cultural heritage items related to
+						<strong>Galileo
+							Galilei</strong>, such as books, people, audiovisual materials, historical events, and
+						cultural artifacts.
+						All metadata were structured and semantically enriched using Linked Open Data principles and
+						ontologies such as
+						<code>schema.org</code>, <code>Dublin Core</code>and <code>CIDOC-CRM</code>.
+					</p>
+
+					<p>Each item was initially described in a <code>CSV</code> file, containing structured metadata
+						mapped to controlled
+						vocabularies and authority records (e.g., VIAF, Wikidata).
+						These CSV files were then transformed into RDF using <code>Python</code> scripts and the
+						<code>rdflib</code> library.
+					</p>
+					<!--text description-->
+				</div>
+				<!--project descripition-->
+
+				<!--project descripition-->
+				<div class="description">
+					<!--title description-->
+					<div class="description_title" style="justify-content: center;">
+						<hr class="description_hr" style="width: 74%; margin-left: 0; margin-right: 2em;">
+						<h2 style="margin-left: 0;">CSV Files</h2>
+
+					</div>
+					<!--title description-->
+
+					<!--text description-->
+					<p>Below is a table listing the available CSV files used as the basis for RDF conversion. Each file
+						corresponds to a
+						single cultural heritage item.
+					</p>
+					<!--text description-->
+				</div>
+				<!--project descripition-->
+
+				<!--tables-->
+				<!-- bottons to change from a table to another -->
+				<div style="display: flex; justify-content: center;">
+					<div class="table_and_buttons">
+
+						<!-- Radio buttons e label come bottoni -->
+						<!--radio buttons-->
+						<input type="radio" id="radio-movie" name="tabs" class="tab-radio" checked>
+						<input type="radio" id="radio-galileo" name="tabs" class="tab-radio">
+						<input type="radio" id="radio-dialogo" name="tabs" class="tab-radio">
+						<input type="radio" id="radio-trial" name="tabs" class="tab-radio">
+						<input type="radio" id="radio-giornate" name="tabs" class="tab-radio">
+						<input type="radio" id="radio-urbano" name="tabs" class="tab-radio">
+						<input type="radio" id="radio-award" name="tabs" class="tab-radio">
+						<input type="radio" id="radio-macchie" name="tabs" class="tab-radio">
+						<input type="radio" id="radio-saturn" name="tabs" class="tab-radio">
+						<input type="radio" id="radio-coin" name="tabs" class="tab-radio">
+
+						<div class="buttons">
+							<label for="radio-movie" class="item_btn">Galileo - Movie</label>
+
+							<label for="radio-galileo" class="item_btn">Vita di Galileo</label>
+
+							<label for="radio-dialogo" class="item_btn">Dialogo sui due Massimi Sistemi</label>
+
+							<label for="radio-trial" class="item_btn">Processo a Galileo Galilei</label>
+
+							<label for="radio-giornate" class="item_btn">Giornate Galileiane</label>
+
+							<label for="radio-urbano" class="item_btn">Papa Urbano VIII</label>
+
+							<label for="radio-award" class="item_btn">Galileo Galilei Award</label>
+
+							<label for="radio-macchie" class="item_btn">Sun's Spots Drawings</label>
+
+							<label for="radio-saturn" class="item_btn">Saturn by Rubens</label>
+
+							<label for="radio-coin" class="item_btn">2€ Coin</label>
+						</div>
+
+						<!-- Actual tables -->
+						<div class="all_tables">
+							<div id="table-movie" class="item-table">
+								<table class="table ">
+									<thead>
+									<tr>
+										<th>subject</th>
+										<th>predicate</th>
+										<th>object</th>
+									</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>https://galileoarchive.org/ISCHGalileo/item/movie</td>
+											<td>rdf:type</td>
+											<td>schema:Movie</td>
+										</tr>
+										<tr>
+											<td>https://galileoarchive.org/ISCHGalileo/item/movie</td>
+											<td>schema:director</td>
+											<td>&lt;http://viaf.org/viaf/100261199&gt;</td>
+										</tr>
+										<tr>
+											<td>https://galileoarchive.org/ISCHGalileo/item/movie</td>
+											<td>schema:datePublished</td>
+											<td>"1969-2-14"</td>
+										</tr>
+										<tr>
+											<td>https://galileoarchive.org/ISCHGalileo/item/movie</td>
+											<td>schema:genre</td>
+											<td>"Drama"</td>
+										</tr>
+										<tr>
+											<td>https://galileoarchive.org/ISCHGalileo/item/movie</td>
+											<td>schema:genre</td>
+											<td>"Historical"</td>
+										</tr>
+										<tr>
+											<td>https://galileoarchive.org/ISCHGalileo/item/movie</td>
+											<td>schema:character</td>
+											<td>&lt;http://viaf.org/viaf/2470550&gt;</td>
+										</tr>
+										<tr>
+											<td>https://galileoarchive.org/ISCHGalileo/item/movie</td>
+											<td>schema:inLanguage</td>
+											<td>"it"</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div id="table-galileo" class="item-table">
+  <table class="table ">
+    <thead>
+      <tr>
+        <th>subject</th>
+        <th>predicate</th>
+        <th>object</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo</td>
+        <td>rdf:type</td>
+        <td>schema:Book</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo</td>
+        <td>schema:author</td>
+        <td>&lt;http://viaf.org/viaf/2467372&gt;</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo</td>
+        <td>schema:author</td>
+        <td>&lt;http://viaf.org/viaf/90636464&gt;</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo</td>
+        <td>schema:inLanguage</td>
+        <td>"it"</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo</td>
+        <td>schema:datePublished</td>
+        <td>"2015"</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo</td>
+        <td>schema:genre</td>
+        <td>"Drama"</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo</td>
+        <td>schema:genre</td>
+        <td>"Epic Theatre"</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/VitaDiGalileo</td>
+        <td>schema:identifier</td>
+        <td>"OCLC:1277290792"</td>
+      </tr>
+    </tbody>
+  </table>
+							</div>
+
+							<div id="table-dialogo" class="item-table">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>subject</th>
+        <th>predicate</th>
+        <th>object</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/Dialogo</td>
+        <td>rdf:type</td>
+        <td><a href="https://schema.org/Book">schema:Book</a></td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/Dialogo</td>
+        <td>schema:author</td>
+        <td><a href="http://viaf.org/viaf/2470550">http://viaf.org/viaf/2470550</a></td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/Dialogo</td>
+        <td>schema:genre</td>
+        <td>"Popular Science"</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/Dialogo</td>
+        <td>schema:genre</td>
+        <td>"Astronomy"</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/Dialogo</td>
+        <td>schema:inLanguage</td>
+        <td>"it"</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/Dialogo</td>
+        <td>schema:datePublished</td>
+        <td>"1632"</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/book/Dialogo</td>
+        <td>schema:identifier</td>
+        <td>"OCLC:1128337506"</td>
+      </tr>
+    </tbody>
+  </table>
+							</div>
+
+							<div id="table-trial" class="item-table"> 
+								<table class="table ">
+									<thead>
+									<tr>
+										<th>subject</th>
+										<th>predicate</th>
+										<th>object</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/book/Processo</td>
+										<td>rdf:type</td>
+										<td><a href="schema:Book">schema:Book</a></td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/book/Processo</td>
+										<td>schema:author</td>
+										<td><a href="http://viaf.org/viaf/71380890">http://viaf.org/viaf/71380890</a></td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/book/Processo</td>
+										<td>schema:inLanguage</td>
+										<td>"it"</td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/book/Processo</td>
+										<td>schema:datePublished</td>
+										<td>"1876"</td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/book/Processo</td>
+										<td>schema:publisher</td>
+										<td>"Tipografi del Senato"</td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/book/Processo</td>
+										<td>schema:about</td>
+										<td>"Biography Trials"</td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/book/Processo</td>
+										<td>schema:about</td>
+										<td><a href="http://viaf.org/viaf/2470550">http://viaf.org/viaf/2470550</a></td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/book/Processo</td>
+										<td>schema:identifier</td>
+										<td>"OCLC:878100596"</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div id="table-giornate" class="item-table">
+								<table class="table">
+									<thead>
+									<tr>
+										<th>subject</th>
+										<th>predicate</th>
+										<th>object</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/event/GiornateGalileiane</td>
+										<td>rdf:type</td>
+										<td><a href="schema:Event">schema:Event</a></td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/event/GiornateGalileiane</td>
+										<td>schema:name</td>
+										<td>"Giornate Galileiane"</td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/event/GiornateGalileiane</td>
+										<td>schema:location</td>
+										<td><a href="https://www.geonames.org/3170647">https://www.geonames.org/3170647</a></td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/event/GiornateGalileiane</td>
+										<td>schema:organizer</td>
+										<td><a href="https://www.comune.pisa.it/">https://www.comune.pisa.it/</a></td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/event/GiornateGalileiane</td>
+										<td>schema:about</td>
+										<td><a href="http://viaf.org/viaf/2470550">http://viaf.org/viaf/2470550</a></td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div id="table-urbano" class="item-table">
+	<table class="table ">
+		<thead>
+		<tr>
+			<th>subject</th>
+			<th>predicate</th>
+			<th>object</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII</td>
+			<td>rdf:type</td>
+			<td><a href="schema:Person">schema:Person</a></td>
+		</tr>
+		<tr>
+			<td>https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII</td>
+			<td>schema:name</td>
+			<td>"Urbano VIII"</td>
+		</tr>
+		<tr>
+			<td>https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII</td>
+			<td>schema:nationality</td>
+			<td>"Italian"</td>
+		</tr>
+		<tr>
+			<td>https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII</td>
+			<td>schema:birthDate</td>
+			<td>"1568-04"</td>
+		</tr>
+		<tr>
+			<td>https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII</td>
+			<td>schema:deathDate</td>
+			<td>"1644-07-29"</td>
+		</tr>
+		<tr>
+			<td>https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII</td>
+			<td>schema:hasRole</td>
+			<td><a href="http://viaf.org/viaf/137124612">http://viaf.org/viaf/137124612</a></td>
+		</tr>
+		<tr>
+			<td>https://galileoarchive.org/ISCHGalileo/person/UrbanoVIII</td>
+			<td>schema:sameAs</td>
+			<td><a href="http://viaf.org/viaf/96062867">http://viaf.org/viaf/96062867</a></td>
+		</tr>
+		</tbody>
+	</table>
+							</div>
+
+							<div id="table-award" class="item-table"> 
+								<table class="table ">
+									<thead>
+									<tr>
+										<th>subject</th>
+										<th>predicate</th>
+										<th>object</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/Medaglia</td>
+										<td>rdf:type</td>
+										<td><a href="schema:Thing">schema:Thing</a></td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/Medaglia</td>
+										<td>schema:additionalType</td>
+										<td><a href="schema:Award">schema:Award</a></td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/Medaglia</td>
+										<td>schema:name</td>
+										<td>"Medaglia Galileo Galilei"</td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/Medaglia</td>
+										<td>schema:startDate</td>
+										<td>"2019"</td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/Medaglia</td>
+										<td>schema:location</td>
+										<td><a href="https://www.geonames.org/3175395">https://www.geonames.org/3175395</a></td>
+									</tr>
+									<tr>
+										<td>https://galileoarchive.org/ISCHGalileo/item/Medaglia</td>
+										<td>schema:sponsor</td>
+										<td><a href="http://viaf.org/viaf/126571826">http://viaf.org/viaf/126571826</a></td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div id="table-macchie" class="item-table">
+  <table class="table ">
+    <thead>
+      <tr>
+        <th>subject</th>
+        <th>predicate</th>
+        <th>object</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/drawing/Macchie</td>
+        <td>rdf:type</td>
+        <td><a href="crm:E22_Human-Made_Object">crm:E22_Human-Made_Object</a></td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/drawing/Macchie</td>
+        <td>crm:P102_has_title</td>
+        <td>"Disegni delle Macchie Solari"</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/drawing/Macchie</td>
+        <td>crm:P108i_was_produced_by</td>
+        <td>:Istoria_E_Dimostrazioni_Production</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/drawing/Macchie</td>
+        <td>crm:P46i_forms_part_of</td>
+        <td><a href="https://opac.bncf.firenze.sbn.it/Record/TO0E124146">https://opac.bncf.firenze.sbn.it/Record/TO0E124146</a></td>
+      </tr>
+    </tbody>
+  </table>
+							</div>
+
+							<div id="table-saturn" class="item-table">
+  <table class="table ">
+    <thead>
+      <tr>
+        <th>subject</th>
+        <th>predicate</th>
+        <th>object</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/painting/Saturn</td>
+        <td>rdf:type</td>
+        <td><a href="schema:VisualArtwork">schema:VisualArtwork</a></td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/painting/Saturn</td>
+        <td>schema:name</td>
+        <td>"Saturno devorando a un hijo"</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/painting/Saturn</td>
+        <td>schema:alternateName</td>
+        <td>"Saturn"</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/painting/Saturn</td>
+        <td>schema:creator</td>
+        <td><a href="http://viaf.org/viaf/56647196">http://viaf.org/viaf/56647196</a></td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/painting/Saturn</td>
+        <td>schema:artform</td>
+        <td><a href="https://www.wikidata.org/wiki/Q296955">https://www.wikidata.org/wiki/Q296955</a></td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/painting/Saturn</td>
+        <td>schema:artworkSurface</td>
+        <td><a href="https://www.wikidata.org/wiki/Q4259259">https://www.wikidata.org/wiki/Q4259259</a></td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/painting/Saturn</td>
+        <td>schema:dateCreated</td>
+        <td>"1636"</td>
+      </tr>
+    </tbody>
+  </table>
+							</div>
+
+							<div id="table-coin" class="item-table">
+  <table class="table ">
+    <thead>
+      <tr>
+        <th>subject</th>
+        <th>predicate</th>
+        <th>object</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/Coin</td>
+        <td>rdf:type</td>
+        <td><a href="crm:E22_Human-Made_Object">crm:E22_Human-Made_Object</a></td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/Coin</td>
+        <td>crm:P102_has_title</td>
+        <td>"Italian 2€ Commemorative Coin for Galileo Galilei"</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/Coin</td>
+        <td>crm:P62_depicts</td>
+        <td><a href="http://viaf.org/viaf/2470550">http://viaf.org/viaf/2470550</a></td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/Coin</td>
+        <td>crm:P108i_was_produced_by</td>
+        <td><a href="http://viaf.org/viaf/129891942">http://viaf.org/viaf/129891942</a></td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/Coin</td>
+        <td>crm:P1_is_identified_by</td>
+        <td>"comm_2014.it"</td>
+      </tr>
+      <tr>
+        <td>https://galileoarchive.org/ISCHGalileo/item/Coin</td>
+        <td>owl:sameAs</td>
+        <td><a href="https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014.it.html">https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014.it.html</a></td>
+      </tr>
+    </tbody>
+  </table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- bottons to change from a table to another -->
+
+				<!--ttl code snippet-->
+				<div class="code-snippet-section">
+					<div class="description">
+					<!--title description-->
+					<div class="description_title">
+						<h2>From CSV to RDF</h2>
+						<hr class="description_hr">
+					</div>
+					<!--title description-->
+
+					<!--text description-->
+					<p>Following the CSV-to-RDF pipeline described above, we generated one Turtle file for each of the ten cultural heritage
+						items.These files represent the <strong>first RDF output</strong> of our workflow: each CSV source was mapped to RDF triples, enriched with controlled vocabularies and authority URIs.  
+  						Next, we moved on to the special case of the full-text TEI edition, transforming it into RDF as well.
+					</p>
+					
+					<p><i><b>Take a look at the document from the code snippet or the link below</b></i></p>
+					<p class="download"><a href="transformations\from_CSV_to_RDF\output.ttl" class="download-link" download>📄 Download the Turtle File</a>
+					 	</p>
+					<!--text description-->
+				    </div>
+					<div class="code-box">
+@base &lt;https://galileoarchive.org/ISCHGalileo/&gt; .
+@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix schema1: &lt;http://schema.org/&gt; .
+
+&lt;item/Coin&gt; a crm:E22_Human-Made_Object ;
+    crm:P102_has_title &quot;Italian 2 Commemorative Coin for Galileo Galilei&quot; ;
+    crm:P108i_was_produced_by &quot;&lt;http://viaf.org/viaf/129891942&gt;&quot; ;
+    crm:P1_is_identified_by &quot;comm_2014.it&quot; ;
+    crm:P62_depicts &quot;&lt;http://viaf.org/viaf/2470550&gt;&quot; ;
+    owl:sameAs &quot;&lt;https://www.ecb.europa.eu/euro/coins/comm/html/comm_2014.it.html&gt;&quot; .
+
+&lt;item/Medaglia&gt; a schema1:Thing ;
+    schema1:additionalType schema1:Award ;
+    schema1:location &quot;&lt;https://www.geonames.org/3175395&gt;&quot; ;
+    schema1:name &quot;Medaglia Galileo Galilei&quot; ;
+    schema1:sponsor &quot;&lt;http://viaf.org/viaf/126571826&gt;&quot; ;
+    schema1:startDate &quot;2019&quot; .
+
+&lt;item/book/Dialogo&gt; a schema1:Book ;
+    schema1:author &quot;&lt;http://viaf.org/viaf/2470550&gt;&quot; ;
+    schema1:datePublished &quot;1632&quot; ;
+    schema1:genre &quot;Astronomy&quot;,
+        &quot;Popular Science&quot; ;
+    schema1:identifier &quot;OCLC:1128337506&quot; ;
+    schema1:inLanguage &quot;it&quot; .
+
+&lt;item/book/Processo&gt; a schema1:Book ;
+    schema1:about &quot;&lt;http://viaf.org/viaf/2470550&gt;&quot;,
+        &quot;Biography Trials&quot; ;
+    schema1:author &quot;&lt;http://viaf.org/viaf/71380890&gt;&quot; ;
+    schema1:datePublished &quot;1876&quot; ;
+    schema1:identifier &quot;OCLC:878100596&quot; ;
+    schema1:inLanguage &quot;it&quot; ;
+    schema1:publisher &quot;Tipografi del Senato&quot; .
+
+&lt;item/book/VitaDiGalileo&gt; a schema1:Book ;
+    schema1:author &quot;&lt;http://viaf.org/viaf/2467372&gt;&quot;,
+        &quot;&lt;http://viaf.org/viaf/90636464&gt;&quot; ;
+    schema1:datePublished &quot;2015&quot; ;
+    schema1:genre &quot;Drama&quot;,
+        &quot;Epic Theatre&quot; ;
+    schema1:identifier &quot;OCLC:1277290792&quot; ;
+    schema1:inLanguage &quot;it&quot; .
+
+&lt;item/drawing/Macchie&gt; a crm:E22_Human-Made_Object ;
+    crm:P102_has_title &quot;Disegni delle Macchie Solari&quot; ;
+    crm:P108i_was_produced_by &quot;:Istoria_E_Dimostrazioni_Production&quot; ;
+    crm:P46i_forms_part_of &quot;&lt;https://opac.bncf.firenze.sbn.it/Record/TO0E124146&gt;&quot; .
+
+&lt;item/event/GiornateGalileiane&gt; a schema1:Event ;
+    schema1:about &quot;&lt;http://viaf.org/viaf/2470550&gt;&quot; ;
+    schema1:location &quot;&lt;https://www.geonames.org/3170647&gt;&quot; ;
+    schema1:name &quot;Giornate Galileiane&quot; ;
+    schema1:organizer &quot;&lt;https://www.comune.pisa.it/&gt;&quot; .
+
+&lt;item/movie&gt; a schema1:Movie ;
+    schema1:character &quot;&lt;http://viaf.org/viaf/2470550&gt;&quot; ;
+    schema1:datePublished &quot;1969-2-14&quot; ;
+    schema1:director &quot;&lt;http://viaf.org/viaf/100261199&gt;&quot; ;
+    schema1:genre &quot;Drama&quot;,
+        &quot;Historical&quot; ;
+    schema1:inLanguage &quot;it&quot; .
+
+&lt;item/painting/Saturn&gt; a schema1:VisualArtwork ;
+    schema1:alternateName &quot;Saturn&quot; ;
+    schema1:artform &quot;&lt;https://www.wikidata.org/wiki/Q296955&gt;&quot; ;
+    schema1:artworkSurface &quot;&lt;https://www.wikidata.org/wiki/Q4259259&gt;&quot; ;
+    schema1:creator &quot;&lt;http://viaf.org/viaf/56647196&gt;&quot; ;
+    schema1:dateCreated &quot;1636&quot; ;
+    schema1:name &quot;Saturno devorando a un hijo&quot; .
+
+&lt;person/UrbanoVIII&gt; a schema1:Person ;
+    schema1:birthDate &quot;1568-04&quot; ;
+    schema1:deathDate &quot;1644-07-29&quot; ;
+    schema1:hasRole &quot;&lt;http://viaf.org/viaf/137124612&gt;&quot; ;
+    schema1:name &quot;Urbano VIII&quot; ;
+    schema1:nationality &quot;Italian&quot; ;
+    schema1:sameAs &quot;&lt;http://viaf.org/viaf/96062867&gt;&quot; .
+					</div>
+				</div>
+				<!--ttl code snippet-->
+				
+				<!--project descripition-->
+				<div class="description">
+					<!--title description-->
+					<div class="description_title">
+						<hr class="description_hr">
+						<h2>From TEI to RDF</h2>
+						
+					</div>
+					<!--title description-->
+
+					<!--text description-->
+					<p>The part of text extracted from the <em>Dialogo sopra i due massimi sistemi del mondo</em> was encoded in
+						TEI/XML following the TEI P5 guidelines.
+						We then used a Python script with <code>rdflib</code> to parse the XML, extract entities
+						(persons, schools of thought, locations) and structural divisions, and serialize everything as
+						RDF/Turtle.
+						The TEI file was analyzed to identify and extract key semantic elements. Named entities such as
+						<strong>persons</strong>, <strong>places</strong>, and <strong>schools of thought</strong> were mapped using
+						vocabularies such as <code>schema.org</code> and <code>Dublin Core</code>.
+						Structural divisions like chapters and speakers turns were also represented as RDF classes and linked to their content.</p>
+					<p><i><b>Take a look at the document from the code snippet or the link below</b></i></p>
+					<p class="download"><a href="transformations\from_XML_to_RDF\dialogo.ttl" class="download-link" download>📄 Download the Turtle File</a>
+					 	</p>
+					<!--text description-->
+
+					<!--code snippet-->
+					<div class="code_snippet">
+						<div class="code-box">
+@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix ex: &lt;http://example.org/dialogo/&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix schema1: &lt;http://schema.org/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+ex:dialogo dc:contributor ex:LiberoSosio ;
+    dc:creator &lt;http://viaf.org/viaf/2470550&gt; ;
+    dc:date &quot;2025&quot;^^xsd:gYear ;
+    dc:publisher &quot;University of Bologna&quot; ;
+    dc:title &quot;Dialogo sopra i due massimi sistemi del mondo: annotated digital edition&quot; ;
+    dcterms:isReferencedBy ex:Sosio_DialogoMassimiSistemi ;
+    dcterms:license &lt;https://creativecommons.org/licenses/by-sa/4.0/&gt; ;
+    schema1:hasContributor [ a schema1:Role ;
+            schema1:performedBy ex:NadiaCalvisi ;
+            schema1:roleName &quot;Encoder&quot; ],
+        [ a schema1:Role ;
+            schema1:performedBy ex:AnnaNicoletti ;
+            schema1:roleName &quot;Encoder&quot; ] ;
+    schema1:location &quot;Bologna&quot; .
+
+ex:sagredo a foaf:Person ;
+    schema1:roleName &quot;character&quot; .
+
+ex:salviati a foaf:Person ;
+    schema1:roleName &quot;character&quot; .
+
+ex:simplicio a foaf:Person ;
+    schema1:roleName &quot;character&quot; .
+
+ex:AnnaNicoletti a foaf:Person ;
+    foaf:name &quot;Anna Nicoletti&quot; .
+
+ex:LiberoSosio a foaf:Person ;
+    foaf:name &quot;Libero Sosio&quot; .
+
+ex:NadiaCalvisi a foaf:Person ;
+    foaf:name &quot;Nadia Calvisi&quot; .
+
+ex:Sosio_DialogoMassimiSistemi a schema1:Book ;
+    dc:creator ex:biblAuthor ;
+    dc:date &quot;1970&quot;^^xsd:gYear ;
+    dc:publisher &quot;Einaudi&quot; ;
+    dc:title &quot;Dialogo sopra i due massimi sistemi del mondo&quot; ;
+    schema1:location &quot;Torino&quot; .
+
+ex:biblAuthor a foaf:Person ;
+    foaf:name &quot;Galileo Galilei&quot; .
+
+&lt;http://viaf.org/viaf/2470550&gt; a foaf:Person ;
+    foaf:name &quot;Galileo Galilei&quot; .
+
+						</div>
+					</div>
+					<!--code snippet-->
+				</div>
+				<!--project descripition-->
+
+			</div>
+		</div>
+
+	</div>
+
+	<!--footer-->
+	<footer>
+		<div class="footer-content">
+			<h3>Galileo Galilei</h3>
+			<p>Created by Anna Nicoletti and Nadia Calvisi for the course "<i>Information Science and Cultural
+					Heritage</i>" within the master degree course Digital Humanities and Digital Knowledge at the
+				University of Bologna.</p>
+		</div>
+		<div class="footer-bottom">
+			<p>© Untitled. All rights reserved. | Design: HTML5 UP, Nadia Calvisi, Anna Nicoletti | <a href="https://github.com/AnnaNicoletti/ISCH_Galileo" class="icon brands style1 fa-github"></a></p>
+		</div>
+
+	</footer>
+	<!--footer-->
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-... (troncato)" crossorigin="anonymous"></script>
+</body>
+
+</html>
